@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400|Inconsolata);
+/* line 38, ../scss/style.scss */
 ul#tabs-list {
   list-style: none;
   text-align: center;
@@ -7,69 +8,74 @@ ul#tabs-list {
   padding: 0;
 }
 
+/* line 47, ../scss/style.scss */
 label.panel-label {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
   display: block;
   width: 100%;
   color: #bdc3c7;
   cursor: pointer;
   background-color: #ecf0f1;
-  -webkit-transition-property: background-color, color;
   transition-property: background-color, color;
-  -webkit-transition-duration: 200ms;
-          transition-duration: 200ms;
+  transition-duration: 200ms;
 }
+/* line 57, ../scss/style.scss */
 label.panel-label:hover {
-  color: #c0392b;
+  color: #6d6e71;
 }
 
+/* line 63, ../scss/style.scss */
 #panels {
   background-color: white;
 }
+/* line 65, ../scss/style.scss */
 #panels .container {
   margin: 0 auto;
   width: 90%;
 }
+/* line 71, ../scss/style.scss */
 #panels section header label.panel-label {
   padding: 12px 24px;
   box-sizing: border-box;
 }
+/* line 76, ../scss/style.scss */
 #panels section main {
   box-sizing: border-box;
   max-height: 0;
   opacity: 0;
-  -webkit-transition: opacity 600ms;
   transition: opacity 600ms;
   overflow-y: hidden;
 }
 
+/* line 195, ../scss/style.scss */
 #panel-1-ctrl:checked ~ #panels #panel-1 main {
   max-height: initial;
   opacity: 1;
   padding: 48px 24px;
 }
 
+/* line 195, ../scss/style.scss */
 #panel-2-ctrl:checked ~ #panels #panel-2 main {
   max-height: initial;
   opacity: 1;
   padding: 48px 24px;
 }
 
+/* line 195, ../scss/style.scss */
 #panel-3-ctrl:checked ~ #panels #panel-3 main {
   max-height: initial;
   opacity: 1;
   padding: 48px 24px;
 }
 
+/* line 195, ../scss/style.scss */
 #panel-4-ctrl:checked ~ #panels #panel-4 main {
   max-height: initial;
   opacity: 1;
   padding: 48px 24px;
 }
 
+/* line 195, ../scss/style.scss */
 #panel-5-ctrl:checked ~ #panels #panel-5 main {
   max-height: initial;
   opacity: 1;
@@ -77,31 +83,37 @@ label.panel-label:hover {
 }
 
 @media all and (max-width: 767px) {
+  /* line 217, ../scss/style.scss */
   #nav-ctrl:checked ~ #tabs-list #li-for-panel-1 {
     max-height: 46px;
     opacity: 1;
   }
 
+  /* line 217, ../scss/style.scss */
   #nav-ctrl:checked ~ #tabs-list #li-for-panel-2 {
     max-height: 46px;
     opacity: 1;
   }
 
+  /* line 217, ../scss/style.scss */
   #nav-ctrl:checked ~ #tabs-list #li-for-panel-3 {
     max-height: 46px;
     opacity: 1;
   }
 
+  /* line 217, ../scss/style.scss */
   #nav-ctrl:checked ~ #tabs-list #li-for-panel-4 {
     max-height: 46px;
     opacity: 1;
   }
 
+  /* line 217, ../scss/style.scss */
   #nav-ctrl:checked ~ #tabs-list #li-for-panel-5 {
     max-height: 46px;
     opacity: 1;
   }
 
+  /* line 223, ../scss/style.scss */
   #open-nav-label {
     display: block;
     position: absolute;
@@ -112,10 +124,12 @@ label.panel-label:hover {
     cursor: pointer;
   }
 
+  /* line 234, ../scss/style.scss */
   #nav-ctrl:checked ~ #tabs-list #open-nav-label {
     display: none;
   }
 
+  /* line 238, ../scss/style.scss */
   #close-nav-label {
     display: block;
     max-height: 0;
@@ -123,7 +137,6 @@ label.panel-label:hover {
     background-color: #444444;
     color: #ecf0f1;
     padding: 0px;
-    -webkit-transition: max-height 200ms;
     transition: max-height 200ms;
     cursor: pointer;
     text-transform: uppercase;
@@ -132,231 +145,268 @@ label.panel-label:hover {
     letter-spacing: 1px;
   }
 
+  /* line 252, ../scss/style.scss */
   #nav-ctrl:checked ~ #tabs-list #close-nav-label {
     max-height: 36px;
     opacity: 1;
     padding: 12px 24px;
   }
 
+  /* line 258, ../scss/style.scss */
   #tabs-list {
     position: relative;
   }
+  /* line 260, ../scss/style.scss */
   #tabs-list label.panel-label {
     padding: 12px 0;
   }
+  /* line 264, ../scss/style.scss */
   #tabs-list #li-for-panel-1 {
     max-height: 0;
     overflow-y: hidden;
-    -webkit-transition: max-height 200ms;
     transition: max-height 200ms;
   }
+  /* line 264, ../scss/style.scss */
   #tabs-list #li-for-panel-2 {
     max-height: 0;
     overflow-y: hidden;
-    -webkit-transition: max-height 200ms;
     transition: max-height 200ms;
   }
+  /* line 264, ../scss/style.scss */
   #tabs-list #li-for-panel-3 {
     max-height: 0;
     overflow-y: hidden;
-    -webkit-transition: max-height 200ms;
     transition: max-height 200ms;
   }
+  /* line 264, ../scss/style.scss */
   #tabs-list #li-for-panel-4 {
     max-height: 0;
     overflow-y: hidden;
-    -webkit-transition: max-height 200ms;
     transition: max-height 200ms;
   }
+  /* line 264, ../scss/style.scss */
   #tabs-list #li-for-panel-5 {
     max-height: 0;
     overflow-y: hidden;
-    -webkit-transition: max-height 200ms;
     transition: max-height 200ms;
   }
 
+  /* line 273, ../scss/style.scss */
   #panel-1-ctrl:checked ~ #tabs-list #li-for-panel-1 {
     max-height: 46px;
     opacity: 1;
   }
+  /* line 187, ../scss/style.scss */
   #panel-1-ctrl:checked ~ #tabs-list #li-for-panel-1 label.panel-label {
     background-color: white;
-    color: #c0392b;
-    background-color: #c0392b;
+    color: #6d6e71;
+    background-color: #6d6e71;
     color: white;
   }
 
+  /* line 273, ../scss/style.scss */
   #panel-2-ctrl:checked ~ #tabs-list #li-for-panel-2 {
     max-height: 46px;
     opacity: 1;
   }
+  /* line 187, ../scss/style.scss */
   #panel-2-ctrl:checked ~ #tabs-list #li-for-panel-2 label.panel-label {
     background-color: white;
-    color: #c0392b;
-    background-color: #c0392b;
+    color: #6d6e71;
+    background-color: #6d6e71;
     color: white;
   }
 
+  /* line 273, ../scss/style.scss */
   #panel-3-ctrl:checked ~ #tabs-list #li-for-panel-3 {
     max-height: 46px;
     opacity: 1;
   }
+  /* line 187, ../scss/style.scss */
   #panel-3-ctrl:checked ~ #tabs-list #li-for-panel-3 label.panel-label {
     background-color: white;
-    color: #c0392b;
-    background-color: #c0392b;
+    color: #6d6e71;
+    background-color: #6d6e71;
     color: white;
   }
 
+  /* line 273, ../scss/style.scss */
   #panel-4-ctrl:checked ~ #tabs-list #li-for-panel-4 {
     max-height: 46px;
     opacity: 1;
   }
+  /* line 187, ../scss/style.scss */
   #panel-4-ctrl:checked ~ #tabs-list #li-for-panel-4 label.panel-label {
     background-color: white;
-    color: #c0392b;
-    background-color: #c0392b;
+    color: #6d6e71;
+    background-color: #6d6e71;
     color: white;
   }
 
+  /* line 273, ../scss/style.scss */
   #panel-5-ctrl:checked ~ #tabs-list #li-for-panel-5 {
     max-height: 46px;
     opacity: 1;
   }
+  /* line 187, ../scss/style.scss */
   #panel-5-ctrl:checked ~ #tabs-list #li-for-panel-5 label.panel-label {
     background-color: white;
-    color: #c0392b;
-    background-color: #c0392b;
+    color: #6d6e71;
+    background-color: #6d6e71;
     color: white;
   }
 
+  /* line 278, ../scss/style.scss */
   #panels .container {
     width: 100%;
   }
+  /* line 281, ../scss/style.scss */
   #panels section header {
     display: block;
   }
 }
 @media all and (min-width: 768px) {
+  /* line 291, ../scss/style.scss */
   #panel-1-ctrl:checked ~ #tabs-list #li-for-panel-1 {
     pointer-events: none;
     cursor: default;
-    -webkit-transform: translate3d(0, 1px, 0);
-            transform: translate3d(0, 1px, 0);
+    transform: translate3d(0, 1px, 0);
     box-shadow: none;
     border-right: none;
   }
+  /* line 164, ../scss/style.scss */
   #panel-1-ctrl:checked ~ #tabs-list #li-for-panel-1.last {
     border-right: 1px solid transparent;
   }
+  /* line 168, ../scss/style.scss */
   #panel-1-ctrl:checked ~ #tabs-list #li-for-panel-1 + li {
     border-left: 1px solid #dfdfdf;
   }
+  /* line 171, ../scss/style.scss */
   #panel-1-ctrl:checked ~ #tabs-list #li-for-panel-1 label.panel-label {
     background-color: white;
-    color: #c0392b;
+    color: #6d6e71;
     padding-top: 26px;
   }
+  /* line 148, ../scss/style.scss */
   #panel-1-ctrl:checked ~ #tabs-list #li-for-panel-1 label.panel-label::after {
     height: 6px;
   }
 
+  /* line 291, ../scss/style.scss */
   #panel-2-ctrl:checked ~ #tabs-list #li-for-panel-2 {
     pointer-events: none;
     cursor: default;
-    -webkit-transform: translate3d(0, 1px, 0);
-            transform: translate3d(0, 1px, 0);
+    transform: translate3d(0, 1px, 0);
     box-shadow: none;
     border-right: none;
   }
+  /* line 164, ../scss/style.scss */
   #panel-2-ctrl:checked ~ #tabs-list #li-for-panel-2.last {
     border-right: 1px solid transparent;
   }
+  /* line 168, ../scss/style.scss */
   #panel-2-ctrl:checked ~ #tabs-list #li-for-panel-2 + li {
     border-left: 1px solid #dfdfdf;
   }
+  /* line 171, ../scss/style.scss */
   #panel-2-ctrl:checked ~ #tabs-list #li-for-panel-2 label.panel-label {
     background-color: white;
-    color: #c0392b;
+    color: #6d6e71;
     padding-top: 26px;
   }
+  /* line 148, ../scss/style.scss */
   #panel-2-ctrl:checked ~ #tabs-list #li-for-panel-2 label.panel-label::after {
     height: 6px;
   }
 
+  /* line 291, ../scss/style.scss */
   #panel-3-ctrl:checked ~ #tabs-list #li-for-panel-3 {
     pointer-events: none;
     cursor: default;
-    -webkit-transform: translate3d(0, 1px, 0);
-            transform: translate3d(0, 1px, 0);
+    transform: translate3d(0, 1px, 0);
     box-shadow: none;
     border-right: none;
   }
+  /* line 164, ../scss/style.scss */
   #panel-3-ctrl:checked ~ #tabs-list #li-for-panel-3.last {
     border-right: 1px solid transparent;
   }
+  /* line 168, ../scss/style.scss */
   #panel-3-ctrl:checked ~ #tabs-list #li-for-panel-3 + li {
     border-left: 1px solid #dfdfdf;
   }
+  /* line 171, ../scss/style.scss */
   #panel-3-ctrl:checked ~ #tabs-list #li-for-panel-3 label.panel-label {
     background-color: white;
-    color: #c0392b;
+    color: #6d6e71;
     padding-top: 26px;
   }
+  /* line 148, ../scss/style.scss */
   #panel-3-ctrl:checked ~ #tabs-list #li-for-panel-3 label.panel-label::after {
     height: 6px;
   }
 
+  /* line 291, ../scss/style.scss */
   #panel-4-ctrl:checked ~ #tabs-list #li-for-panel-4 {
     pointer-events: none;
     cursor: default;
-    -webkit-transform: translate3d(0, 1px, 0);
-            transform: translate3d(0, 1px, 0);
+    transform: translate3d(0, 1px, 0);
     box-shadow: none;
     border-right: none;
   }
+  /* line 164, ../scss/style.scss */
   #panel-4-ctrl:checked ~ #tabs-list #li-for-panel-4.last {
     border-right: 1px solid transparent;
   }
+  /* line 168, ../scss/style.scss */
   #panel-4-ctrl:checked ~ #tabs-list #li-for-panel-4 + li {
     border-left: 1px solid #dfdfdf;
   }
+  /* line 171, ../scss/style.scss */
   #panel-4-ctrl:checked ~ #tabs-list #li-for-panel-4 label.panel-label {
     background-color: white;
-    color: #c0392b;
+    color: #6d6e71;
     padding-top: 26px;
   }
+  /* line 148, ../scss/style.scss */
   #panel-4-ctrl:checked ~ #tabs-list #li-for-panel-4 label.panel-label::after {
     height: 6px;
   }
 
+  /* line 291, ../scss/style.scss */
   #panel-5-ctrl:checked ~ #tabs-list #li-for-panel-5 {
     pointer-events: none;
     cursor: default;
-    -webkit-transform: translate3d(0, 1px, 0);
-            transform: translate3d(0, 1px, 0);
+    transform: translate3d(0, 1px, 0);
     box-shadow: none;
     border-right: none;
   }
+  /* line 164, ../scss/style.scss */
   #panel-5-ctrl:checked ~ #tabs-list #li-for-panel-5.last {
     border-right: 1px solid transparent;
   }
+  /* line 168, ../scss/style.scss */
   #panel-5-ctrl:checked ~ #tabs-list #li-for-panel-5 + li {
     border-left: 1px solid #dfdfdf;
   }
+  /* line 171, ../scss/style.scss */
   #panel-5-ctrl:checked ~ #tabs-list #li-for-panel-5 label.panel-label {
     background-color: white;
-    color: #c0392b;
+    color: #6d6e71;
     padding-top: 26px;
   }
+  /* line 148, ../scss/style.scss */
   #panel-5-ctrl:checked ~ #tabs-list #li-for-panel-5 label.panel-label::after {
     height: 6px;
   }
 
+  /* line 296, ../scss/style.scss */
   ul#tabs-list {
     text-align: center;
     border-bottom: 1px solid #dfdfdf;
   }
+  /* line 95, ../scss/style.scss */
   ul#tabs-list li {
     display: inline-block;
     text-align: center;
@@ -366,56 +416,64 @@ label.panel-label:hover {
     border-right: 1px solid #dfdfdf;
     position: relative;
   }
+  /* line 104, ../scss/style.scss */
   ul#tabs-list li:hover {
-    -webkit-transition: none;
     transition: none;
     border-right: none;
   }
+  /* line 108, ../scss/style.scss */
   ul#tabs-list li:hover.last {
     border-right: 1px solid transparent;
   }
+  /* line 111, ../scss/style.scss */
   ul#tabs-list li:hover + li {
     border-left: 1px solid #dfdfdf;
   }
+  /* line 116, ../scss/style.scss */
   ul#tabs-list li label.panel-label {
     position: relative;
     padding: 24px 0;
   }
+  /* line 119, ../scss/style.scss */
   ul#tabs-list li label.panel-label::after {
     content: "";
     position: absolute;
     width: 100%;
     left: 0;
     bottom: 100%;
-    background-color: #c0392b;
+    background-color: #6d6e71;
     height: 0;
-    -webkit-transition-property: height;
     transition-property: height;
-    -webkit-transition-duration: 200ms;
-            transition-duration: 200ms;
+    transition-duration: 200ms;
   }
+  /* line 130, ../scss/style.scss */
   ul#tabs-list li label.panel-label:hover {
     padding-top: 25px;
   }
+  /* line 132, ../scss/style.scss */
   ul#tabs-list li label.panel-label:hover::after {
     height: 6px;
   }
 
+  /* line 300, ../scss/style.scss */
   #open-nav-label,
   #close-nav-label {
     display: none;
   }
 
+  /* line 305, ../scss/style.scss */
   #nav-ctrl {
     display: none;
   }
 }
 @media all and (min-width: 900px) {
+  /* line 312, ../scss/style.scss */
   main {
     width: 70%;
     margin: 0 auto;
   }
 }
+/* line 323, ../scss/style.scss */
 .panel-radios {
   position: fixed;
   left: 50%;
@@ -424,109 +482,121 @@ label.panel-label:hover {
   opacity: 0.5;
   z-index: 99;
 }
+/* line 337, ../scss/style.scss */
 .panel-radios:nth-child(1) {
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
+  transform: translateX(-50px);
 }
+/* line 337, ../scss/style.scss */
 .panel-radios:nth-child(2) {
-  -webkit-transform: translateX(-30px);
-          transform: translateX(-30px);
+  transform: translateX(-30px);
 }
+/* line 342, ../scss/style.scss */
 .panel-radios:nth-child(3) {
-  -webkit-transform: translateX(-10px);
-          transform: translateX(-10px);
+  transform: translateX(-10px);
 }
+/* line 347, ../scss/style.scss */
 .panel-radios:nth-child(4) {
-  -webkit-transform: translateX(10px);
-          transform: translateX(10px);
+  transform: translateX(10px);
 }
+/* line 347, ../scss/style.scss */
 .panel-radios:nth-child(5) {
-  -webkit-transform: translateX(30px);
-          transform: translateX(30px);
+  transform: translateX(30px);
 }
+/* line 353, ../scss/style.scss */
 .panel-radios:nth-child(6) {
   top: 30px;
-  -webkit-transform: translateX(-10px);
-          transform: translateX(-10px);
+  transform: translateX(-10px);
   display: block;
 }
 
+/* line 361, ../scss/style.scss */
 body {
-  background: #e74c3c;
+  background: #75d1f4;
   color: #444444;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
 }
 
+/* line 368, ../scss/style.scss */
 #introduction {
   width: 90%;
   margin: 0 auto;
   padding: 48px 24px;
   color: white;
 }
+/* line 373, ../scss/style.scss */
 #introduction h1 {
   font-weight: 300;
   text-align: center;
 }
 
+/* line 381, ../scss/style.scss */
 main h1 {
   margin-top: 0;
   font-weight: 300;
-  color: #c0392b;
+  color: #6d6e71;
 }
+/* line 386, ../scss/style.scss */
 main p {
   line-height: 1.8;
 }
+/* line 389, ../scss/style.scss */
 main hr {
   margin: 12px 0;
   border-top: 1px solid #dfdfdf;
 }
 
+/* line 396, ../scss/style.scss */
 label.demo-label {
-  background-color: #c0392b;
+  background-color: #6d6e71;
   color: white;
   padding: 4px 8px;
   border-radius: 2px;
   cursor: pointer;
   display: inline-block;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
+/* line 404, ../scss/style.scss */
 label.demo-label:hover {
-  background-color: #e74c3c;
+  background-color: #75d1f4;
 }
 
+/* line 409, ../scss/style.scss */
 #demo-child-toggle {
   display: none;
 }
+/* line 411, ../scss/style.scss */
 #demo-child-toggle:checked ~ #demo-parent #demo-child {
-  color: #c0392b;
+  color: #6d6e71;
   font-weight: bold;
   text-transform: uppercase;
 }
 
+/* line 418, ../scss/style.scss */
 #demo-parent {
   margin-top: 8px;
 }
 
+/* line 423, ../scss/style.scss */
 code,
 pre {
-  color: #c0392b;
+  color: #6d6e71;
   font-family: Inconsolata, "Andale Mono", Andale, monowidth;
   background-color: #ecf0f1;
   border: 1px solid #dfdfdf;
   border-radius: 2px;
 }
 
+/* line 432, ../scss/style.scss */
 code {
   padding: 2px 6px;
 }
 
+/* line 436, ../scss/style.scss */
 pre {
   padding: 12px;
   line-height: 1.6;
 }
+/* line 439, ../scss/style.scss */
 pre strong {
   color: #444444;
   font-weight: normal;
